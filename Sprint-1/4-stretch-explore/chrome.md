@@ -16,3 +16,58 @@ Now try invoking the function `prompt` with a string input of `"What is your nam
 
 What effect does calling the `prompt` function have?
 What is the return value of `prompt`?
+
+1. Calling alert("Hello world!")
+
+When we type into the Chrome Console:
+
+alert("Hello world!");
+
+🔹 What effect does calling alert have?
+
+It opens a popup dialog box with the message:
+
+Hello world!
+
+
+The user must click OK to close it.
+
+While the alert is open, JavaScript execution is paused.
+
+🔹 What does alert return?
+alert() returns undefined.
+Its only purpose is to display a message.
+
+2. Calling prompt("What is your name?")
+
+Type into the Console:
+
+const myName = prompt("What is your name?");
+
+🔹 What effect does calling prompt have?
+
+It opens a popup dialog box with a text input field and the message:
+
+What is your name?
+
+
+The user can type something and then click:
+
+OK, or
+
+Cancel
+
+🔹 What is the return value of prompt?
+
+It depends on what the user does:
+Types something + presses OK -> A string with the user’s input
+Leaves input empty + presses OK -> "" (empty string)
+Presses Cancel -> null
+
+So the code:
+const myName = prompt("What is your name?");
+will store one of the following in myName:
+
+"Maya" (or any text the user types)
+"" (empty string)
+null (if Cancel is clicked)
