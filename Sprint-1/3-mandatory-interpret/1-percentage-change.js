@@ -33,28 +33,30 @@ console.log(`The percentage change is ${percentageChange}`);
 
 // b) Run the code and identify the line where the error is coming from - why is this error occurring? How can you fix this problem?
 //The error is located here: 
-// priceAfterOneYear = Number(priceAfterOneYear.replaceAll("," ""));
+priceAfterOneYear = Number(priceAfterOneYear.replaceAll("," ""));
 //Error: Incorrect syntax inside replaceAll
+
 //There should be a comma between the arguments inside replaceAll(), not a space.
 //Currently there: replaceAll("," "")
 //JavaScript thinks we are calling a function with one argument and interprets the second text as a syntax error.
+
 //The correct version is: 
-// priceAfterOneYear = Number(priceAfterOneYear.replaceAll(",", ""));
+priceAfterOneYear = Number(priceAfterOneYear.replaceAll(",", ""));
 
 // c) Identify all the lines that are variable reassignment statements
 //These are the lines:
-//carPrice = Number(carPrice.replaceAll(",", ""));
-//priceAfterOneYear = Number(priceAfterOneYear.replaceAll(",", ""));
+carPrice = Number(carPrice.replaceAll(",", ""));
+priceAfterOneYear = Number(priceAfterOneYear.replaceAll(",", ""));
 
 // d) Identify all the lines that are variable declarations
 // Variable declarations are lines:
-//let carPrice = "10,000";
-//let priceAfterOneYear = "8,543";
-//const priceDifference = carPrice - priceAfterOneYear;
-//const percentageChange = (priceDifference / carPrice) * 100;
+let carPrice = "10,000";
+let priceAfterOneYear = "8,543";
+const priceDifference = carPrice - priceAfterOneYear;
+const percentageChange = (priceDifference / carPrice) * 100;
 
 // e) Describe what the expression Number(carPrice.replaceAll(",","")) is doing - what is the purpose of this expression?
-//carPrice.replaceAll(“,”, “”)
+carPrice.replaceAll(“,”, “”)
 //Takes the string “10,000”
 //Removes all commas
 //The result is “10000” (still a string).
