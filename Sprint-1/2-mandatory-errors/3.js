@@ -17,8 +17,8 @@ const last4Digits = cardNumber.slice(-4);
 //The error happened because JavaScript numbers are primitive values, they do not have array or string methods. To use slice, the value must first be converted to a string.
 //We need to convert the number to a string before slicing:
 
-//const cardNumber = 4533787178994213;
-//const last4Digits = cardNumber.toString().slice(-4);
+const cardNumber = 4533787178994213;
+const last4Digits = cardNumber.toString().slice(-4);
 
-//console.log(last4Digits); 
+console.log(last4Digits); 
 //The result will be 4213
