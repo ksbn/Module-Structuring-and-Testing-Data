@@ -23,8 +23,8 @@ console.log(result);
 
 // b) How many function calls are there?
 //The function is called using (). In this code:
-//console.log(result);
-//console.log() → 1 function called
+console.log(result);
+console.log() → 1 function called
 //There are no functions in the remaining lines.
 
 // c) Using documentation, explain what the expression movieLength % 60 represents
@@ -49,11 +49,11 @@ console.log(result);
 //8760 / 60 = 146 minutes
 
 // e) What do you think the variable result represents? Can you think of a better name for this variable?
-//const result = `${totalHours}:${remainingMinutes}:${remainingSeconds}`;
+const result = `${totalHours}:${remainingMinutes}:${remainingSeconds}`;
 //result is the movie duration in hours:minutes:seconds format.
 //For example: 2:26:24
 //Better variable name is:
-//const movieTimeFormatted = `${totalHours}:${remainingMinutes}:${remainingSeconds}`;
+const movieTimeFormatted = `${totalHours}:${remainingMinutes}:${remainingSeconds}`;
 
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
 //Limitations:
@@ -63,4 +63,4 @@ console.log(result);
 //If movieLength is negative → the code will output negative hours and minutes, which may be illogical
 //For very large numbers, it still works, but the format may be inconvenient
 //Improvement: add String.padStart(2, “0”) for formatting:
-//const result = `${String(totalHours).padStart(2,'0')}:${String(remainingMinutes).padStart(2,'0')}:${String(remainingSeconds).padStart(2,'0')}`;
+const result = `${String(totalHours).padStart(2,'0')}:${String(remainingMinutes).padStart(2,'0')}:${String(remainingSeconds).padStart(2,'0')}`;
