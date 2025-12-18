@@ -27,3 +27,4 @@ test("returns 10 for 10 (10♥)", () => {
 test("throws an error for an invalid card rank", () => {
   expect(() => getCardValue("Z♠")).toThrow("Invalid card rank.");
 });
+
