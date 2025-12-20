@@ -16,7 +16,7 @@ function square(3) {
 
 // =============> SyntaxError: Unexpected token '}'
 
-// =============> The names of the parameters, such as x or num, should be in square brackets after the function name.
+// =============> The names of the parameters, such as x or num, should be in parentheses (round brackets) after the function name.
 // We cannot write the number 3.
 // JavaScript sees a number where there should be an identifier → the syntax is invalid, so a SyntaxError is thrown.
 // Even if the function were declared, we are using a variable inside it: return num * num; But num is not declared anywhere — this would cause a ReferenceError.
