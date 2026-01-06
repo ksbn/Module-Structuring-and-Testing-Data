@@ -17,3 +17,21 @@
 function calculateBMI(weight, height) {
     // return the BMI of someone based off their weight and height
 }
+
+function calculateBMI(weight, height) {
+    // BMI = weight / (height * height)
+    const bmi = weight / (height * height);
+    // round to 1 decimal place
+    return +bmi.toFixed(1);
+}
+
+console.log(calculateBMI(70, 1.73));  // 23.4
+console.log(calculateBMI(80, 1.8));   // 24.7
+console.log(calculateBMI(60, 1.6));   // 23.4
+console.log(calculateBMI(90, 1.9));   // 24.9
+console.log(calculateBMI(50, 1.65));  // 18.4
+
+// Multiply height by itself — height * height
+// Divide weight by the square of height — weight / (height * height)
+// Round to 1 decimal place using toFixed(1)
+// Convert the string from toFixed back to a number using unary +
